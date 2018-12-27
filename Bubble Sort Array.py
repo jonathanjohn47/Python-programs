@@ -13,7 +13,6 @@ for i in range(len(x)):
 			t = x[j]
 			x[j] = x[j+1]
 			x[j+1] = t
-			#flag = True
 		else:
 			pass
 
