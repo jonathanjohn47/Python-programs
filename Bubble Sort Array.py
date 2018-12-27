@@ -7,14 +7,13 @@ for i in range(100):
 print('Original List is: ')
 print(x)
 
-flag = False
 for i in range(len(x)):
-	for j in range(len(x)-1 - i):
+	for j in range(len(x)-1-i):
 		if (x[j] > x[j+1]):
 			t = x[j]
 			x[j] = x[j+1]
 			x[j+1] = t
-			flag = True
+			#flag = True
 		else:
 			pass
 
