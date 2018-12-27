@@ -1,5 +1,8 @@
 import numpy as np
-x = np.arange(100,0,-1)
+import random
+x = []
+for i in range(100):
+	x.append(random.randint(1,1000))
 
 print('Original List is: ')
 print(x)
@@ -12,11 +15,8 @@ for i in range(len(x)):
 			x[j] = x[j+1]
 			x[j+1] = t
 			flag = True
-	if (flag == False):
-		break
-	else:
-		flag = False
-		
+		else:
+			pass
 
 print('Sorted List is: ')
 print(x)
